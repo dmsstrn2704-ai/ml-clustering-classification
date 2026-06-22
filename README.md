@@ -1,24 +1,49 @@
-# Machine Learning: Clustering & Classification
+# 🤖 Machine Learning — Clustering & Classification
 
-Proyek ini merupakan submission akhir dari kursus **Belajar Machine Learning Pemula (BMLP)** di Dicoding. Proyek terbagi menjadi dua tahap utama: clustering (unsupervised learning) dan classification (supervised learning).
+![Python](https://img.shields.io/badge/Python-3.x-blue) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange) ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## 📋 Deskripsi Proyek
+Proyek submission akhir kursus **Belajar Machine Learning Pemula (BMLP)** Dicoding. Mencakup dua tahap: clustering (unsupervised learning) untuk menemukan pola tersembunyi dalam data, dan classification (supervised learning) untuk membangun model prediksi berdasarkan hasil clustering.
 
-### 1. Clustering
-Melakukan segmentasi/pengelompokan data menggunakan teknik unsupervised learning untuk menemukan pola tersembunyi dalam data tanpa label.
+## 📌 Highlights
 
-### 2. Classification
-Menggunakan hasil cluster sebagai label untuk membangun model klasifikasi (Decision Tree) yang dapat memprediksi kelompok data baru.
+| Metric | Hasil |
+|---|---|
+| Teknik unsupervised | Clustering |
+| Teknik supervised | Decision Tree Classification |
+| Model tersimpan | ✅ 2 model (.h5) |
+| Tools | Scikit-learn, Pandas |
 
-## 🛠️ Tools & Library
-- Python
-- Pandas & NumPy (data processing)
-- Scikit-learn (modeling)
-- Jupyter Notebook
-
-## 📁 Struktur Folder
+## 🔄 Alur Pengerjaan
 
 ```
+   Raw Dataset
+        │
+        ▼
+ [ CLUSTERING ]  ── Unsupervised Learning
+        │            mengelompokkan data tanpa label
+        │            berdasarkan kemiripan fitur
+        ▼
+  Data + Label Cluster
+        │
+        ▼
+ [ CLASSIFICATION ] ── Decision Tree
+        │               melatih model untuk memprediksi
+        │               cluster pada data baru
+        ▼
+   Model Tersimpan (.h5)
+```
+
+## 🛠️ Teknologi
+
+- **Python 3.x** — bahasa utama
+- **Pandas & NumPy** — manipulasi & pembersihan data
+- **Scikit-learn** — clustering & classification model
+- **Jupyter Notebook** — eksplorasi & dokumentasi proses
+
+## 📁 Struktur Project
+
+```
+ml-clustering-classification/
 ├── [Clustering]_Submission_Akhir_BMLP_Dimas_Satria.ipynb
 ├── [Klasifikasi]_Submission_Akhir_BMLP_Dimas_Satria.ipynb
 ├── data_clustering.csv
@@ -28,25 +53,34 @@ Menggunakan hasil cluster sebagai label untuk membangun model klasifikasi (Decis
 └── MACHINE LEARNING DICODING.pdf
 ```
 
-## 🚀 Cara Menjalankan
+## ⚙️ Instalasi
 
-1. Clone repository ini
 ```bash
+# 1. Clone repository
 git clone https://github.com/dmsstrn2704-ai/ml-clustering-classification.git
-```
+cd ml-clustering-classification
 
-2. Install dependencies
-```bash
+# 2. Install dependencies
 pip install pandas numpy scikit-learn jupyter
 ```
 
-3. Jalankan notebook menggunakan Jupyter Notebook atau Google Colab
+## 🚀 Cara Menjalankan
 
-## 👤 Author
+```bash
+# Jalankan notebook clustering
+jupyter notebook "[Clustering]_Submission_Akhir_BMLP_Dimas_Satria.ipynb"
+
+# Jalankan notebook classification
+jupyter notebook "[Klasifikasi]_Submission_Akhir_BMLP_Dimas_Satria.ipynb"
+```
+
+## 📊 Output
+
+- 📄 `data_clustering.csv` — data hasil clustering
+- 🧩 `model_clustering.h5` — model clustering tersimpan
+- 🌳 `decision_tree_model.h5` — model klasifikasi tersimpan
+
+## 👨‍💻 Author
 
 **Dimas Satria Nugroho**
-
-
-## 📄 License
-
-Proyek ini dibuat untuk keperluan submission kursus Dicoding.
+GitHub: [@dmsstrn2704-ai](https://github.com/dmsstrn2704-ai)
